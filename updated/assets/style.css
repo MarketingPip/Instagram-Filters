@@ -127,3 +127,9 @@ html.light .main-carousel .flickity-prev-next-button.no-svg {
 html.light .subheadingtwo {
   color: #868e96;
 }
+.error {
+  color: $white;
+  text-align: center;
+  display: none;
+  margin: 16px auto;
+}
