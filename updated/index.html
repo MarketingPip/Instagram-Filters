@@ -30,7 +30,7 @@
       <main>
         <div> 
           <img  id="myImg" class="img-fluid" src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&amp;fit=crop&amp;w=700&amp;h=700&amp;q=80"/></div>
-      </main><span class="error">Image not found, so here is another doggy</span>
+      </main><span class="error">Image not found, so here is a picture of a dog!</span>
     </div>
   </div>
   <div class="row">
@@ -214,7 +214,7 @@
 // Image from url 
 
 var Ximgurl = $('#try').val();
-var XimgDefault = $('#def').val();    
+var XimgDefault = "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&amp;fit=crop&amp;w=700&amp;h=700&amp;q=80";
 
     loadImage(Ximgurl,XimgDefault)
 
@@ -249,7 +249,7 @@ function loadImage(imgurl,imgDefault) {
     // if there was an error loading the image, react accordingly
     .error(function () {
         // notify the user that the image could not be loaded
-        $('#loader').removeClass('loading')
+        $(".error").css("display", "block");
         $(img).attr('src', imgDefault);
 
     })
