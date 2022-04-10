@@ -4,11 +4,22 @@
     <script type="module" src="assets/change-class.js"></script>
  <title>Instagram Filter </title>
  </head>
-  <h1>Apply a filter</h1>
-<div class="options-area"> <input type='file' /> 
+<h1>Apply a filter</h1>
+
+<div class="options-area"> <button style="width:120px; height:30px;" onclick="document.getElementById('getFile').click()">Upload Image</button>
+
+
+
+<input type='file' id="getFile" style="display:none"> 
 Filter:
 </div>
+
+Or Use Image From URL: 
+<input type="text" name="try" id="try" value="https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png" class="text ui-widget-content ui-corner-all" /> <input type="button" id="reload" value="Load Image">
+<br>
+
 <figure>
-<img id="myImg" src="https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png" alt="your image" />
+<img id="myImg" src="#" alt="your image" />
+
 </figure>
 
