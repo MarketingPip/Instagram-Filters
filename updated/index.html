@@ -1,0 +1,261 @@
+<head>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2.0.10/dist/flickity.pkgd.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
+  <script type="module" src="assets/ig-filters.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/picturepan2/instagram.css/master/dist/instagram.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+  <title>Instagram Filter </title>
+ </head>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
+
+
+
+<button type="button" class="btn btn-dark" id="toggle-dark" name="dark_light" title="Toggle dark/light mode">🌛</button>
+<div class="container">     
+  <div class="row">
+    <div class="col-md-8 mx-auto base-img">
+      <h1 class="heading">Instagram CSS Filter</h1>
+      <p class="subheading"> <button style="width:120px; height:30px;" onclick="document.getElementById('getFile').click()">Upload Image</button></p>
+      <input type='file' id="getFile" style="display:none"> 
+      <center>  <p class="subheading"> or</p></center>
+      <p class="subheadingtwo"> Upload Image From Link</p>
+     <input class="form-control custom-img" type="text" name="try" id="try" value="https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png" class="text ui-widget-content ui-corner-all" /> <input type="button" id="reload" value="Load Image">
+      
+      <main>
+        <div> 
+          <img  id="myImg" class="img-fluid" src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&amp;fit=crop&amp;w=700&amp;h=700&amp;q=80"/></div>
+      </main><span class="error">Image not found, so here is another doggy</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="main-carousel">
+        <div class="carousel-cell is-clicked">
+          <figure class="filter-normal"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">normal</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-1977"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">1977</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-aden"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">aden</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-amaro"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">amaro</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-ashby"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">ashby</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-brannan"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">brannan</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-brooklyn"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">brooklyn</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-charmes"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">charmes</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-clarendon"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">clarendon</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-crema"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">crema</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-dogpatch"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">dogpatch</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-earlybird"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">earlybird</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-gingham"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">gingham</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-ginza"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">ginza</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-hefe"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">hefe</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-helena"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">helena</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-hudson"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">hudson</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-inkwell"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">inkwell</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-kelvin"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">kelvin</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-juno"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">juno</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-lark"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">lark</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-lofi"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">lofi</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-ludwig"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">ludwig</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-maven"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">maven</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-mayfair"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">mayfair</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-moon"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">moon</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-nashville"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">nashville</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-perpetua"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">perpetua</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-poprocket"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">poprocket</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-reyes"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">reyes</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-rise"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">rise</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-sierra"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">sierra</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-skyline"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">skyline</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-slumber"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">slumber</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-stinson"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">stinson</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-sutro"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">sutro</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-toaster"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">toaster</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-valencia"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">valencia</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-vesper"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">vesper</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-walden"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">walden</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-willow"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">willow</div>
+        </div>
+        <div class="carousel-cell">
+          <figure class="filter-xpro-ii"><img class="img-fluid" src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"/></figure>
+          <div class="filter-caption">xpro-ii</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">// Paste Image
+
+// Image from url 
+
+var Ximgurl = $('#try').val();
+var XimgDefault = $('#def').val();    
+
+    loadImage(Ximgurl,XimgDefault)
+
+
+$('#reload').click(function() {
+    Ximgurl = $('#try').val();
+    XimgDefault = $('#def').val();
+    loadImage(Ximgurl,XimgDefault);
+});
+
+function loadImage(imgurl,imgDefault) {
+    var img = $('#myImg');
+
+    // wrap our new image in jQuery, then:
+    $(img)
+    // once the image has loaded, execute this code
+    .load(function () {
+        // set the image hidden by default    
+        $(this).hide();
+
+        // with the holding div #loader, apply:
+        $('#loader')
+        // remove the loading class (so no background spinner), 
+        .removeClass('loading')
+        // then insert our image
+        .append(this);
+
+        // fade our image in to create a nice effect
+        $(this).fadeIn();
+    })
+
+    // if there was an error loading the image, react accordingly
+    .error(function () {
+        // notify the user that the image could not be loaded
+        $('#loader').removeClass('loading')
+        $(img).attr('src', imgDefault);
+
+    })
+
+    // *finally*, set the src attribute of the new image to our image
+    .attr('src', imgurl);
+}
+
+
+</script>
