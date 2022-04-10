@@ -73,12 +73,7 @@ img {
 .main-carousel .flickity-prev-next-button.next {
   right: -30px;
 }
-.error {
-  color: #f7f9fa;
-  text-align: center;
-  display: none;
-  margin: 16px auto;
-}
+
 .custom-img {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -128,7 +123,7 @@ html.light .subheadingtwo {
   color: #868e96;
 }
 .error {
-  color: $white;
+  color: #f7f9fa;
   text-align: center;
   display: none;
   margin: 16px auto;
