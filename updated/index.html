@@ -227,6 +227,8 @@ $('#reload').click(function() {
 
 function loadImage(imgurl,imgDefault) {
     var img = $('#myImg');
+    // Error Message is hidden - unless needed.
+    $('.error').hide();
 
     // wrap our new image in jQuery, then:
     $(img)
