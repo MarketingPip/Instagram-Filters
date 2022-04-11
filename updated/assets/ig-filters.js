@@ -53,4 +53,5 @@ function imageIsLoaded(e) {
     $('#myImg').attr('src', e.target.result);
 };
 
+$('.error').hide();
 
