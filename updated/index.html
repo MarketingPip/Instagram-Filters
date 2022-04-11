@@ -249,7 +249,7 @@ function loadImage(imgurl,imgDefault) {
     // if there was an error loading the image, react accordingly
     .error(function () {
         // notify the user that the image could not be loaded
-        $("error").css("display", "block");
+        $('.error').show();
         $(img).attr('src', imgDefault);
 
     })
