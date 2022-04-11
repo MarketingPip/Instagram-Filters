@@ -209,6 +209,12 @@
   </div>
 </div>
 
+
+  <script type="text/javascript">
+    // Error Message is hidden - unless needed.
+    $('.error').hide();
+</script>
+
   <script type="text/javascript">// Paste Image
 
 // Image from url 
@@ -227,8 +233,6 @@ $('#reload').click(function() {
 
 function loadImage(imgurl,imgDefault) {
     var img = $('#myImg');
-    // Error Message is hidden - unless needed.
-    $('.error').hide();
 
     // wrap our new image in jQuery, then:
     $(img)
@@ -262,3 +266,4 @@ function loadImage(imgurl,imgDefault) {
 
 
 </script>
+
