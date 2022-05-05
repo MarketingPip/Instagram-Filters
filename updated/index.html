@@ -259,9 +259,7 @@ function loadImage(imgurl,imgDefault) {
         $('.error').show();
         $(img).attr('src', imgDefault);
 
-    }) else{
-      $('.error').hide();
-    }
+    }) 
 
     // *finally*, set the src attribute of the new image to our image
     .attr('src', imgurl);
