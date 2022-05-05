@@ -241,7 +241,8 @@ function loadImage(imgurl,imgDefault) {
     .load(function () {
         // set the image hidden by default    
         $(this).hide();
-
+        
+        $('.error').hide();
         // with the holding div #loader, apply:
         $('#loader')
         // remove the loading class (so no background spinner), 
