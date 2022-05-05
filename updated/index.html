@@ -239,6 +239,7 @@ function loadImage(imgurl,imgDefault) {
     $(img)
     // once the image has loaded, execute this code
     .load(function () {
+        $('.error').show();
         // set the image hidden by default    
         $(this).hide();
         
@@ -260,15 +261,6 @@ function loadImage(imgurl,imgDefault) {
         $(img).attr('src', imgDefault);
 
     })
-  
-  
-     if (error) {
-       alert("d")
-     } else {
-       alert("d1")
-     }
-  
-
 
     // *finally*, set the src attribute of the new image to our image
     .attr('src', imgurl);
