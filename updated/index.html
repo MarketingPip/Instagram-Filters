@@ -239,7 +239,7 @@ function loadImage(imgurl,imgDefault) {
     $(img)
     // once the image has loaded, execute this code
     .load(function () {
-        $('.error').show();
+        $('.error').hide();
         // set the image hidden by default    
         $(this).hide();
         
