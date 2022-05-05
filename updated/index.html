@@ -242,7 +242,6 @@ function loadImage(imgurl,imgDefault) {
         // set the image hidden by default    
         $(this).hide();
         
-        $('.error').hide();
         // with the holding div #loader, apply:
         $('#loader')
         // remove the loading class (so no background spinner), 
@@ -261,6 +260,19 @@ function loadImage(imgurl,imgDefault) {
         $(img).attr('src', imgDefault);
 
     })
+  
+  
+     if (error) {
+       alert("d")
+     } else {
+       alert("d1")
+     }
+  
+   if (.error) {
+       alert("d2")
+     } else {
+      alert("d3" 
+     }
 
     // *finally*, set the src attribute of the new image to our image
     .attr('src', imgurl);
